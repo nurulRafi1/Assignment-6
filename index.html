@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialar</title>
+    <link rel="stylesheet" href="phone.css">
+</head>
+<body>
+    <h1 id="header-title">Dialar Application</h1>
+    <div class="container">
+
+        <div class="contrast-btn">
+            <input type="button" class="tabButton" id="contrast" value="Change Contrast">
+            <input type="button" class="tabButton" id="larger" value="Magnify">
+        </div>
+
+        <div class="tabBar">
+            <input type="button" class="tabButton" id="tabButtonDialar" value="Dialar">
+            <input type="button" class="tabButton" id="tabButtonContactList" value="Contact List">
+            <input type="button" class="tabButton" id="tabButtonAddContact" value="Add Contact">
+            <input type="button" class="tabButton" id="tabButtonAbout" value="About this Project">
+        </div>
+
+        <!--Tab Content Started-->
+        <div class="tabContent">
+            <!--Dialar Tab Started-->
+            <div class="tabContentDialar">
+                <div class="dialarHeader">
+                    <h1>Dialar</h1>
+                    <input type="text" id="phoneNumber" maxlength="12">
+                </div>
+                <div class="dialarPad">
+                    <div>
+                        <input type="button" class="dialarButton" value="1">
+                        <input type="button" class="dialarButton" value="2">
+                        <input type="button" class="dialarButton" value="3">
+                    </div>
+                    <div>
+                        <input type="button" class="dialarButton" value="4">
+                        <input type="button" class="dialarButton" value="5">
+                        <input type="button" class="dialarButton" value="6">
+                    </div>
+                    <div>
+                        <input type="button" class="dialarButton" value="7">
+                        <input type="button" class="dialarButton" value="8">
+                        <input type="button" class="dialarButton" value="9">
+                    </div>
+                    <div>
+                        <input type="button" class="dialarButton" value="*">
+                        <input type="button" class="dialarButton" value="0">
+                        <input type="button" class="dialarButton" value="#">
+                    </div>
+                </div>
+                <div class="dialar-footer">
+                    <div>
+                        
+                        <input type="button" class="dialarOptionButton" id="clearButton" value="Clear">
+                        <input type="button" class="dialarOptionButton" id="dialButton" value="Dial">
+                        <input type="button" class="dialarOptionButton" id="deleteButton" value="Delete">
+                    
+                        <!--
+                            <img id="reset" src="images/reset.png" height="75px" width="75px">
+                            <img id="dial" src="images/dial.png" height="75px" width="75px">
+                            <img id="delete" src="images/delete.png" height="75px" width="75px">
+                        -->
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <!--Dialar Tab Ended-->
+
+            <!--Contact List Tab Started-->
+            <div class="tabContentContactList">
+                <div class="contactListHeader">
+                    <h1>Contact List</h1>
+                </div>
+                <div class="contactList">
+                    
+                </div>
+                
+            </div>
+            <!--Contact List Tab Ended-->
+            
+            <!--Add Contact Tab Started-->
+            <div class="tabContentAddContact">
+                <div class="addContactHeader">
+                    <h1>Add Contact</h1>
+                </div>
+                <div class="addContact">
+                    <form id="contactForm">
+                        <fieldset>
+            
+                            <b class="add-contact-label">Contact Name</b></br>
+                            <input type="text" class="add-contact-textfield" id="contactName" size="30" required pattern="[a-zA-Z0-9]+" placeholder="John Smith"></br></br>
+                            <b class="add-contact-label">Phone Number</b></br>
+                            <input type="text" class="add-contact-textfield" id="contactNo" required placeholder="123#456#78"></br></br>
+                            <b class="add-contact-label">Email Address</b></br>
+                            <input type="email" class="add-contact-textfield" id="contactEmail" required placeholder="johnsmith@gmail.com"></br></br>
+                        
+                        </fieldset></br></br>
+                        <div class="add-contact-buttons">
+                            <input type="button" class="add-contact-button" id="contactClear" value="Clear">
+                            <input type="submit" class="add-contact-button" id="addContact" value="Add Contact">
+                        </div>
+                        
+                        
+                        
+                    </form>
+                </div>
+            </div>
+            <!--Add Contact Tab Ended-->
+
+            <!--Gesture Tab Started-->
+            <div class="tabContentGesture">	
+				<div class="gestureHeader">
+                    <h1>Gesture Practice</h1>
+                </div>
+				<div class="gestureOutputArea">
+					<input id="gestureOutput" type="text">
+				</div>
+				<div class="gestureSwipe">
+                </div>
+                
+                <div class="gestureTabSwipe"></div>
+			</div>
+            <!--Gesture Tab Ended-->
+
+             <!--About Tab Started-->
+             <div class="tabContentAbout">	
+                <h2 class ="h2"> Using the magnifier </h2>
+				<div class="magnifier">
+					<p> I have tested the MacOSX Magnifier app on the ESPN Cricinfo website. For zoom in the Command(⌘) key‌ 
+                    + Plus sign (+) key should be pressed and for zoom out Command(⌘) key‌ + Minus sign (-) key can be used.
+                    You can also zoom in and out using the mouse by pressing Command(⌘) key and rotating the wheel on your mouse.
+                    The Magnifier is easy to use and has different magnification settings, which is very useful. I have used 200% of magnification.
+				    Magnifier is easier to use via its onscreen user
+					interface, which makes it especially user-friendly for mouse users. However, I did find it challenging to move through the screen even to 
+                    finish reading one sentence; it becomes tiresome. Also, magnification sometimes makes the content blurred though it depneds on how much zoom in has been made. Always custom magnification is the 
+                    better option for the user because the ratio of magnification depends on the individual ussr which can be shown in the iphone application settings. 
+					
+					</p>
+				</div>
+				<h2 class ="h2"> Low vision modes</h2>
+				<div class="low_vision">
+					<p> I have included two kinds of low vision modes in this project, magnification mode and contrast alteration mode. At the top of the 
+                    web page, two distinct buttons have been added to enable each of these modes. The button labelled 'Magnify' makes the fonts on the page larger while 
+                    the other button labelled 'Change contrast' changes the background and text color.
+					
+					</p>
+				</div>
+			</div>
+            <!--About Tab Ended-->
+
+        </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="phone.js"></script>
+</body>
+</html>
